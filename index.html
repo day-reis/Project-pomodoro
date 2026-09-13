@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Pomodoro </title>
+</head>
+
+<body class="tema-foco">
+
+    <main class="app">
+
+        <h1> 
+            Pomodoro
+        </h1>
+    
+        <section class="tipos" id="tipos">
+            <h2>Temas</h2>
+
+            <button id="foco">Foco</button>
+            <button id="estudo">Estudo</button>
+            <button id="trabalho">Trabalho</button>
+            <button id="leitura">Leitura</button>
+        </section>
+
+        <section class="tempo" id="tempo">
+
+            <div class="time-wrapper">
+                
+                <div class="raios">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                    <span style="--i:4;"></span>
+                    <span style="--i:5;"></span>
+                    <span style="--i:6;"></span>
+                    <span style="--i:7;"></span>
+                    <span style="--i:8;"></span>
+                    <span style="--i:9;"></span>
+                    <span style="--i:10;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:12;"></span>
+                </div>
+
+                <div class="time-circle">
+                    <p class="timer-label" id="timer-label">POMODORO</p>
+                    <h1 id="timer">25:00</h1>
+                </div>
+            </div>
+
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <button class="modo-btn" id="modo-btn">Pomodoro 25 min</button>
+
+            <div class="controles">
+                <button id="iniciar">Iniciar</button>
+                <button id="pausar">Pausar</button>
+                <button id="reiniciar">Reiniciar</button>
+            </div>
+
+        </section>
+
+        
+        <section class="estatistica" id="estatistica">
+            <h2>Estatísticas</h2>
+
+            <p> Sequência: <span id="sequencia">0</span> sessões</p>
+
+            <p>Tempo focado hoje: <span id="tempo-focado">0 min</span></p>
+        </section>
+
+    </main>
+    
+        
+   
+    <script src="script.js"></script>
+</body>
+</html>
